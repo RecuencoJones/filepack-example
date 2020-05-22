@@ -1,0 +1,8 @@
+{
+  "name": "@app/build",
+  "version": "1.0.0",
+  "main": "tsconfig.json",
+  "dependencies": {
+    "typescript": "3.9"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@app/http",
+  "version": "1.0.0",
+  "scripts": {
+    "prepack": "tsc"
+  },
+  "dependencies": {
+    "@app/core": "file+pack:../core"
+  },
+  "devDependencies": {
+    "@app/build": "file+pack:../build"
+  }
+}

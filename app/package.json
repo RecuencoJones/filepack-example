@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "private": true,
+  "scripts": {
+    "serve": "node dist/index.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@app/config": "file+pack:../shared/config",
+    "@app/core": "file+pack:../shared/core",
+    "@app/http": "file+pack:../shared/http",
+    "@nestjs/common": "7.0.13",
+    "@nestjs/core": "7.0.13",
+    "@nestjs/platform-express": "7.0.13",
+    "reflect-metadata": "0.1.13",
+    "rxjs": "6.5.5"
+  },
+  "devDependencies": {
+    "@app/build": "file+pack:../shared/build"
+  }
+}
