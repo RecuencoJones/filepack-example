@@ -5,12 +5,12 @@ build.all:
 
 .PHONY:
 build.app:
-	FILEPACK_PREFIX=app npm-filepack
+	FILEPACK_PREFIX=app filepack
 	npm --prefix app run build
 
 .PHONY:
 build.client:
-	FILEPACK_PREFIX=client npm-filepack
+	FILEPACK_PREFIX=client filepack
 	npm --prefix client run build
 
 .PHONY:
@@ -23,11 +23,11 @@ run.client:
 
 .PHONY:
 docker.app:
-	docker build -t monorepo-app -f app.dockerfile .
+	docker build -t monorepo-app -f app.dockerfile . --no-cache
 
 .PHONY:
 docker.client:
-	docker build -t monorepo-client -f client.dockerfile .
+	docker build -t monorepo-client -f client.dockerfile . --no-cache
 
 .PHONY:
 clean:

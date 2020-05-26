@@ -9,12 +9,10 @@ WORKDIR /build/app
 
 RUN npm i -g npm-filepack
 
-RUN npm-filepack \
+RUN filepack \
  && npm run build
 
-# npm prune --production should be enough
-RUN npm prune --production \
- && NODE_ENV=production npm-filepack
+RUN npm prune --production
 
 FROM node:erbium-alpine
 

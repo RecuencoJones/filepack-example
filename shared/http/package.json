@@ -4,10 +4,16 @@
   "scripts": {
     "prepack": "tsc"
   },
+  "filepackDependencies": {
+    "@app/core": "../core"
+  },
+  "filepackDevDependencies": {
+    "@app/build": "../build"
+  },
   "dependencies": {
-    "@app/core": "file+pack:../core"
+    "@app/core": "../core/app-core-1.0.0.tgz"
   },
   "devDependencies": {
-    "@app/build": "file+pack:../build"
+    "@app/build": "../build/app-build-1.0.0.tgz"
   }
 }

@@ -5,10 +5,14 @@
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
+  "filepackDependencies": {
+    "@app/config": "../shared/config",
+    "@app/core": "../shared/core"
+  },
   "dependencies": {
-    "@app/config": "file+pack:../shared/config",
-    "@app/core": "file+pack:../shared/core",
-    "vue": "2.6.11"
+    "vue": "2.6.11",
+    "@app/config": "../shared/config/app-config-1.0.0.tgz",
+    "@app/core": "../shared/core/app-core-1.0.0.tgz"
   },
   "devDependencies": {
     "@vue/cli-service": "4.3.1",

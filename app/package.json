@@ -5,17 +5,25 @@
     "serve": "node dist/index.js",
     "build": "tsc"
   },
+  "filepackDependencies": {
+    "@app/config": "../shared/config",
+    "@app/core": "../shared/core",
+    "@app/http": "../shared/http"
+  },
   "dependencies": {
-    "@app/config": "file+pack:../shared/config",
-    "@app/core": "file+pack:../shared/core",
-    "@app/http": "file+pack:../shared/http",
     "@nestjs/common": "7.0.13",
     "@nestjs/core": "7.0.13",
     "@nestjs/platform-express": "7.0.13",
     "reflect-metadata": "0.1.13",
-    "rxjs": "6.5.5"
+    "rxjs": "6.5.5",
+    "@app/config": "../shared/config/app-config-1.0.0.tgz",
+    "@app/core": "../shared/core/app-core-1.0.0.tgz",
+    "@app/http": "../shared/http/app-http-1.0.0.tgz"
+  },
+  "filepackDevDependencies": {
+    "@app/build": "../shared/build"
   },
   "devDependencies": {
-    "@app/build": "file+pack:../shared/build"
+    "@app/build": "../shared/build/app-build-1.0.0.tgz"
   }
 }

@@ -9,7 +9,7 @@ WORKDIR /build/client
 
 RUN npm i -g npm-filepack
 
-RUN npm-filepack \
+RUN filepack \
  && npm run build
 
 FROM caddy:2-alpine
